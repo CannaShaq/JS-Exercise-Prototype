@@ -43,18 +43,19 @@ function Person(name, age) {
   this.name = name;
   this.age = age;
   this.stomach = [];
-
-  this.eat = function(food){
-    if(this.stomach.length <= 10){
-      return this.stomach.push(food);
-    }else{return}
-  }
-  this.poop = function(){
-    this.stomach.foreach(this.stomach.pop());
-  }
-  this.toString(`${this.name} ${this.age}`);
 }
 
+Person.prototype.this.eat = function(food, stomach){
+  if(stomach.length <= 10){
+    return stomach.push(food);
+  }
+}
+Person.prototype.this.poop = function(stomach){
+  stomach.forEach(stomach.pop());
+}
+
+//`$name} ${age}` goes inside toString method somehow
+Person.prototype.this.toString() ;
 /*
   TASK 2
     - Write a Car constructor that initializes `model` and `milesPerGallon` from arguments.
